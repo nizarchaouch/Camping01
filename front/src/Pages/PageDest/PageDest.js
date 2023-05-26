@@ -23,7 +23,6 @@ function PageDest() {
 
     return (
         <>
-            {/* <h2>destination page {params.id}</h2> */}
             <div className="containerr">
                 <p className="title pt-4"><Proposer title="DECOUVRIR LA tunisie" /></p>
                 <p className="title"><Proposer title={dest.title} subtitle={dest.subtitle} /></p>
@@ -32,13 +31,13 @@ function PageDest() {
                 <section class="gal" id="gal">
                     <div class="grid">
                         <div class="gallery-item">
-                            <img src={ima1} />
+                            <img src={ima1} alt="image1"/>
                         </div>
                         <div class="gallery-item">
-                            <img src={ima2} />
+                            <img src={ima2} alt="image2"/>
                         </div>
                         <div class="gallery-item">
-                            <img src={ima3} />
+                            <img src={ima3} alt="image3"/>
                         </div>
 
 
