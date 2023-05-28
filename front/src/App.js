@@ -8,6 +8,7 @@ import Destination from "./Pages/Destination/Destination";
 import PageDest from "./Pages/PageDest/PageDest";
 import Guide from "./Pages/Guide/Guide";
 import Login from "./Pages/Login/Login";
+import Contact from "./Pages/Contact/Contact";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/destination" element={< Destination />}/>
         <Route path="/destination/PageDest/:id" element={< PageDest />}/>
         <Route path="/guide" element={< Guide />}/>
+        <Route path="/contact" element={< Contact />}/>
         {/* <Route path="/About" element={< About />} /> */}
       </Routes>
     </>

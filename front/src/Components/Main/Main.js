@@ -31,7 +31,7 @@ function Main() {
               </NavDropdown.Item>
               <Link to="/acceuil" className="dropdown-item">GUIDE</Link>
             </NavDropdown>
-            <Link to="/acceuil" className="mx-4 link">CONTACT</Link>
+            <Link to="/contact" className="mx-4 link">CONTACT</Link>
           </Nav>
 
           <Link>
