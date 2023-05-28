@@ -47,7 +47,7 @@ const login = async (req, res) => {
         nom: mail.nom,
         role: mail.role
     }
-    if (!mail && payload.role==0) {
+    if (!mail && payload.role==1) {
          res.status(408).send('mail or password invalid!')
          console.log(payload.role)
     }else {

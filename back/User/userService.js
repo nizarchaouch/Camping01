@@ -89,7 +89,9 @@ const login = async (req, res) => {
     nom: mail.nom,
     role: mail.role
 }
-  if (!mail && !payload.role==0) {
+console.log(payload.role);
+  if(payload.role==0){
+    if (!mail ) {
       res.status(404).send('mail or password invalid!')  
   }else {
       validPass = bcrypt.compareSync(data.password, mail.password)
@@ -106,6 +108,8 @@ const login = async (req, res) => {
 
           res.status(200).send({message: 'Successfully Logged In',mytoken: token })
       }
+  }}else{
+    res.status(404).send('mail or password invalid!')
   }
 
 }

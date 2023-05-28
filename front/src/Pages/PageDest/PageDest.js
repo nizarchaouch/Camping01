@@ -18,7 +18,7 @@ function PageDest() {
         axios.get(`http://localhost:3000/destination/PageDest/${params.id}`)
             .then(res => setDest(res.data))
             .catch(err => console.log(err));
-    }, []);
+    }, [params.id]);
 
 
     return (

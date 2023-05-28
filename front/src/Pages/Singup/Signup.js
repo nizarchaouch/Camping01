@@ -30,7 +30,7 @@ const SignUpForm = () => {
  
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:3000/Admin/addAdmin', {
+    axios.post('http://localhost:3000/User/adduser', {
       nom: nom,
       prenom: prenom,
       numero: numero,
